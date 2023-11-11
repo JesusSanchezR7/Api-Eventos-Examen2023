@@ -1,0 +1,35 @@
+###
+
+GET http://localhost:3001/eventos HTTP/1.1
+
+###
+POST http://localhost:3001/create HTTP/1.1
+Content-Type: application/json
+
+{
+    "Nombre_Evento": "Concierto de Taylor Swift en UT",
+    "Fecha_Evento": "2024-02-07",
+    "Hora_Evento": "20:00:00",
+    "Ciudad": "UT",
+    "Lugar_Evento_Direccion": "Estadio Vuleter, 123 Main St, Phoenix, Az",
+    "Precio_Entradas": 100,
+    "Num_Boletos_Disponibles": 500
+}
+
+###
+DELETE http://localhost:3001/delete/28 HTTP/1.1
+
+###
+PUT http://localhost:3001/update HTTP/1.1
+Content-Type: application/json
+
+{   
+    "ID_Evento": "1",
+    "Nombre_Evento": "Concierto de Taylor Swift en Los Angeles",
+    "Fecha_Evento": "2023-05-17",
+    "Hora_Evento": "20:00:00",
+    "Ciudad": "Los Angeles",
+    "Lugar_Evento_Direccion": "Estadio XYZ, 123 Main St, Los Angeles, CA",
+    "Precio_Entradas": 1800,
+    "Num_Boletos_Disponibles": 500
+}
