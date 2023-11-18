@@ -1,0 +1,39 @@
+   .imagen-izquierda {
+    width: 550px;
+    height: 100vh;
+    background: url('./img/cartel.jpg');
+    background-size: cover;
+    position: absolute;
+    left: -5px;
+    top: -1px;
+    z-index: 0;
+  }
+  
+  .imagen-derecha {
+    width: 850px;
+    height: 100vh;
+    position: absolute;
+    right: 80px;
+    top: 0;
+    z-index: -1;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 30px; 
+    color: #fafafa; 
+    margin-top: 20px; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+  }
+  
+  .firma {
+    width: 400px;
+    height: 150px;
+    background: url('./img/firma.png');
+    position: absolute;
+    left: 530px;
+    top: 610px;
+    z-index: -1;
+  }
